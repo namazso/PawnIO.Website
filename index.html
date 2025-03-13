@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>PawnIO</title>
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0941da, #30d453);
+            overflow: hidden;
+            scroll-behavior: smooth;
+            margin-top: 50px;
+            
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-variation-settings: "wdth" 100;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .icon {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background-color: #00b3b3;
+            color: white;
+            font-size: 1.4rem;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #00e3e3;
+            transform: translateY(-5px);
+        }
+
+        .content-section {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0px 50px 0px;
+            width: 100%;
+            max-width: 1000px;
+            box-sizing: border-box;
+            margin-top: 80px;
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        .content-section p {
+            line-height: 1.8;
+        }
+        
+        .content-section ul {
+            list-style-type: square;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="initial-screen">
+        <img src="pawn.svg" class="icon" />
+        <h1>PawnIO</h1>
+        <a href="https://github.com/namazso/PawnIO.Setup/releases/latest/download/PawnIO_setup.exe"><button class="download-btn">Download Now</button></a>
+    </div>
+
+    <div class="content-section">
+        <p>
+            PawnIO is a scriptable universal kernel driver, allowing hardware access to a wide variety of programs. It utilizes the <a href="https://www.compuphase.com/pawn/pawn.htm">Pawn</a> scripting language and the <a href="https://github.com/namazso/PawnPP">PawnPP</a> interpreter. When installed, any software implementing PawnIO modules can use the driver to access or control hardware supported by one of the <a href="https://github.com/namazso/PawnIO.Modules">official modules</a>.
+        </p>
+
+        <p>
+            PawnIO comes in multiple distributions:
+        </p>
+
+        <ul>
+            <li>Official edition: The version available here as a standalone installer. Identical to the open-source version, but digitally signed.</li>
+            <li>Unrestricted edition: An unsigned version without signature checking. Useful for development, and can be downloaded from <a href="https://github.com/namazso/PawnIO.Setup/releases/latest">Releases</a>.</li>
+            <li>Open-source: The components <a href="https://github.com/namazso/PawnIO">PawnIO</a> and <a href="https://github.com/namazso/PawnIOLib">PawnIOLib</a> are made available under an open-source license that allows developers to create their own PawnIO forks.</li>
+            <li>Licensed: The PawnIO code is available for custom licensing for usage in proprietary software. Please <a href="https://namazso.eu/">contact me</a> for licensing options.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
